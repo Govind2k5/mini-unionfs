@@ -21,6 +21,11 @@ Three core mechanisms make this possible:
 
 **Whiteout files** — deleting a lower-layer file creates a hidden `.wh.<filename>` marker in the upper layer. The path resolver sees this marker and reports the file as deleted, without touching the lower layer.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img alt="Request flow from a syscall on the mount point down through resolve_path()'s whiteout/upper/lower checks, with the CoW copy and whiteout-marker side effects shown as dashed arrows" src="assets/architecture-light.svg">
+</picture>
+
 ## Prerequisites
 
 - Ubuntu 22.04 LTS (or compatible Linux)
