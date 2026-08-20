@@ -1,0 +1,12 @@
+# Build artifacts
+*.o
+mini_unionfs
+
+# Generated test environment (created fresh by unionfs_cli.sh / test suite)
+unionfs_test_env/
+
+# Editor / tooling
+.claude/
+
+# Not part of the repo — course assignment brief
+UnionFS project.pdf
